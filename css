@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --rose-White: hsl(330, 100%, 98%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-Grey: hsl(30, 18%, 87%);
+  --wenge-Brown: hsl(30, 10%, 34%);
+  --dark-Charcoal: hsl(24, 5%, 18%);
+  --nutmeg: hsl(14, 45%, 36%);
+
+  --young-serif: "Young Serif", sans-serif;
+  --outfit: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--eggshell);
+}
+
+.omelette-recipe-page {
+  background-color: hsl(30, 18%, 87%);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: white;
+  border-radius: 16px;
+  margin: 100px auto;
+}
+
+.recipe-content {
+  padding: 0 32px;
+}
+
+/* Recipe intro */
+.recipe-intro {
+  margin: 16px 0;
+}
+
+.recipe-intro p {
+  font-family: var(--outfit);
+  color: var(--wenge-Brown);
+}
+
+/* Recipe Preparation */
+.recipe-preparation {
+  padding: 20px 0 20px 32px;
+  background-color: var(--rose-White);
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+.recipe-preparation h3 {
+  font-family: var(--outfit);
+  color: var(--dark-raspberry);
+  padding-bottom: 10px;
+}
+
+.recipe-preparation ul {
+  list-style-position: inside;
+  padding-left: 5px;
+}
+
+.recipe-preparation li::marker {
+  color: var(--dark-raspberry);
+}
+
+.recipe-preparation li {
+  font-family: var(--outfit);
+  color: var(--wenge-brown);
+  padding: 5px 0;
+}
+
+.recipe-preparation li::marker {
+  color: var(--dark-raspberry);
+}
+
+.recipe-intro h1 {
+  font-family: var(--young-serif);
+  font-weight: 400;
+  color: var(--dark-Charcoal);
+  padding-bottom: 16px;
+}
+
+/* Recipe Ingredients */
+.recipe-ingredients {
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.recipe-ingredients h2 {
+  font-family: var(--young-serif);
+  font-weight: 400;
+  color: var(--nutmeg);
+  padding-bottom: 8px;
+}
+
+.recipe-ingredients ul {
+  margin: 0 0 25px 20px;
+}
+
+.recipe-ingredients li {
+  font-family: var(--outfit);
+  color: var(--wenge-brown);
+  padding: 10px;
+}
+
+.recipe-ingredients li::marker {
+  color: var(--nutmeg);
+}
+
+/* Recipe Instructions */
+.recipe-instructions {
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--light-grey);
+  padding-top: 25px;
+}
+
+.recipe-instructions h2 {
+  font-family: var(--young-serif);
+  font-weight: 400;
+  color: var(--nutmeg);
+  padding-bottom: 16px;
+}
+
+.recipe-instructions ol {
+  margin: 0 0 25px 20px;
+}
+
+.recipe-instructions li {
+  font-family: var(--outfit);
+  color: var(--wenge-brown);
+  padding: 5px 0 5px 16px;
+}
+
+.recipe-instructions li::marker {
+  color: var(--nutmeg);
+  font-weight: 700;
+}
+
+/* Recipe nutrition info */
+.recipe-nutrition-info h2 {
+  font-family: var(--young-serif);
+  font-weight: 400;
+  color: var(--nutmeg);
+  padding-bottom: 16px;
+  padding-top: 25px;
+}
+
+.recipe-nutrition-info p {
+  font-family: var(--outfit);
+  color: var(--wenge-brown);
+  padding-bottom: 16px;
+}
+
+.recipe-nutrition-info table {
+  width: 100%;
+  font-family: var(--outfit);
+  color: var(--wenge-brown);
+  text-align: left;
+}
+
+.nutrient {
+  font-weight: 400;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.nutrient-value {
+  font-weight: 700;
+  color: var(--nutmeg);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.last-nutrient {
+  font-weight: 400;
+  padding: 16px;
+  border-bottom: none;
+}
+
+.last-nutrient-value {
+  font-weight: 700;
+  color: var(--nutmeg);
+  border-bottom: none;
+}
+
+/* Image */
+.omelette-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.omelette-image {
+  padding: 32px 32px 0 32px;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 18px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .recipe_general {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .recipe_image {
+    padding: 0;
+  }
+
+  .recipe_image img {
+    border-radius: 0px;
+  }
+}
