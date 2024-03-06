@@ -4,7 +4,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Overview
 
 ### Links
-- Live Site URL: 
+- Live Site URL: https://omelette-recipe-page-amit.netlify.app/
 
 ### Built with
 - Semantic HTML5 markup
